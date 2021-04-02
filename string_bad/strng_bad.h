@@ -11,8 +11,10 @@ private:
 
 public:
   StringBad(const char *s);
+  StringBad(const StringBad &st);
   StringBad();
   ~StringBad();
+  StringBad &operator=(const StringBad &st);
   friend std::ostream &operator<<(std::ostream &os, const StringBad &st);
 };
 
